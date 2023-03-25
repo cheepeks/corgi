@@ -1,0 +1,131 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(221, 171, 128);
+    font-family:Impact;
+    margin: 0px;
+    color: rgb(117, 88, 50);
+}
+section{
+    background: rgb(249, 243, 231);
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted rgb(0, 0, 0);
+    color: rgb(117, 88, 50);
+    width: 200px;
+}
+article{
+    background: rgb(245, 222, 169);
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted rgb(0, 0, 0);
+    width: 200px;
+    color: rgb(117, 88, 50);
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+main{
+    margin: 10px;
+}
+aside{
+    padding: .5rem;
+    margin: .5rem;
+    border: 1px dotted black;
+    color: rgb(63, 42, 16);
+}
+h1, h2, h3{
+    text-align: center;
+}
+nav{
+    background-color: rgb(249, 243, 231);
+    margin: 10px 10px 0px 10px;
+}
+nav ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    display: block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #ffffff;
+    text-transform: uppercase;
+}
+li.selected{
+    background-color: rgb(245, 222, 169);
+}
+a:link,
+a:visited{
+    color: rgb(117, 88, 50);
+}
+a:focus,
+a:hover,
+a:active{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+footer{
+    background-color:rgb(245, 222, 169);
+    text-align: center;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    font-weight: bold;
+    color: #a96025
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+.social-icons > li {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.social-icons a {
+    position: relative;
+    background-color: #eee;
+    display: block;
+    user-select: none;
+    transition: background-color .3s ease-in-out;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+}
+.social-icons a:hover {
+    background-color: #e0e0e0;
+}
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    left: .65rem;
+    top: .65rem;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+   }
+   .social-icons .social-icon-inst::before {
+    background-image: url("images/icon-instagram.png");
+   }
+   .social-icons .social-icon-tik::before {
+    background-image: url("images/icon-tiktok.png");
+   }   
+   .photo{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+   }
